@@ -31,7 +31,22 @@ namespace MainProject
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
+            String adrs = Convert.ToString(tbAdress);
+            int yrs, squarMetters, price, windw;
+
+            yrs = Convert.ToInt32(tbAnt);
+            squarMetters = Convert.ToInt32(tbSqm);
+            price = Convert.ToInt32(basePrice);
+            windw = Convert.ToInt32(tbNumStore);
+
+            Store st1 = new Store(adrs, yrs, squarMetters, price, windw);
+
             
+
+            
+
+
+
         }
 
         private void tbAnt_TextChanged(object sender, EventArgs e)

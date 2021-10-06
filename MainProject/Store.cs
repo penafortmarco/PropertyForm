@@ -1,5 +1,4 @@
-﻿using DotLiquid.Tags;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,33 +6,31 @@ using System.Threading.Tasks;
 
 namespace MainProject
 {
-    class Department : Property
+    class Store : Property
     {
-        private int nDept;
+        private int nWindow;
 
-
-        public Department(string adress, int years, float sqm, double price, int nDept) : base(adress, years, sqm, price)
+        public Store(string adress, int years, float sqm, double price, int nWindow) : base(adress, years, sqm, price)
         {
-            
-        }
 
+        }
 
         private double CalculateValue(double endPrice)
         {
 
-            if (years<15)
+            if (sqm > 50)
             {
                 endPrice = endPrice + (endPrice * 0.1);
-            } else if (years > 15)
+            }
+            if (nWindow <= 1)
             {
                 endPrice = endPrice - (endPrice * 0.2);
-            }
-
-            if (nDept >= 3)
+            }else if (nWindow > 4)
             {
-                endPrice = endPrice + (endPrice * 0.3);
+                endPrice = endPrice + (endPrice * 0.2);
             }
             return endPrice;
         }
+
     }
 }

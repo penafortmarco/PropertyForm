@@ -12,3 +12,16 @@ C:\Users\penaf\source\repos\MainProject\MainProject\bin\Debug\DotLiquid.dll
 C:\Users\penaf\source\repos\MainProject\MainProject\bin\Debug\DotLiquid.xml
 C:\Users\penaf\source\repos\MainProject\MainProject\bin\Debug\it\DotLiquid.resources.dll
 C:\Users\penaf\source\repos\MainProject\MainProject\obj\Debug\MainProject.csproj.CopyComplete
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\bin\Debug\MainProject.exe.config
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\bin\Debug\MainProject.exe
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\bin\Debug\MainProject.pdb
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\bin\Debug\DotLiquid.dll
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\bin\Debug\DotLiquid.xml
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\bin\Debug\it\DotLiquid.resources.dll
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\obj\Debug\MainProject.csproj.AssemblyReference.cache
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\obj\Debug\MainProject.Form1.resources
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\obj\Debug\MainProject.Properties.Resources.resources
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\obj\Debug\MainProject.csproj.GenerateResource.cache
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\obj\Debug\MainProject.csproj.CoreCompileInputs.cache
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\obj\Debug\MainProject.exe
+C:\Users\Marco Peñafort\Desktop\Facultad\Laboratorio\GithubProyects\LabTestForm\PropertyForm\MainProject\obj\Debug\MainProject.pdb

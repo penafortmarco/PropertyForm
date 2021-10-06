@@ -8,16 +8,17 @@ namespace MainProject
 {
     abstract class Property
     {
-        private string adress;
-        private int years;
-        private float sqm;
+        protected string adress;
+        protected int years;
+        protected float sqm;
+        protected double price;
 
-        protected Property()
+        protected Property(string adress, int years, float sqm, double price)
         {
+            this.adress = adress;
+            this.years = years;
+            this.sqm = sqm;
+            this.price = price;
         }
-
-        protected abstract double CalculateValue();
-
-        
     }
 }
