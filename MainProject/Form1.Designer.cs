@@ -48,6 +48,7 @@ namespace MainProject
             this.basePrice = new System.Windows.Forms.TextBox();
             this.labelPrice = new System.Windows.Forms.Label();
             this.buttonCalculate = new System.Windows.Forms.Button();
+            this.labelFinalPrice = new System.Windows.Forms.Label();
             this.gbProperty.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,19 +70,18 @@ namespace MainProject
             this.gbProperty.Controls.Add(this.rbStore);
             this.gbProperty.Controls.Add(this.rbDept);
             this.gbProperty.Location = new System.Drawing.Point(9, 18);
-            this.gbProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProperty.Margin = new System.Windows.Forms.Padding(2);
             this.gbProperty.Name = "gbProperty";
-            this.gbProperty.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProperty.Padding = new System.Windows.Forms.Padding(2);
             this.gbProperty.Size = new System.Drawing.Size(286, 147);
             this.gbProperty.TabIndex = 1;
             this.gbProperty.TabStop = false;
             this.gbProperty.Text = "Tipo de Inmueble";
-            this.gbProperty.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // tbNumStore
             // 
             this.tbNumStore.Location = new System.Drawing.Point(169, 112);
-            this.tbNumStore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNumStore.Margin = new System.Windows.Forms.Padding(2);
             this.tbNumStore.Name = "tbNumStore";
             this.tbNumStore.Size = new System.Drawing.Size(76, 20);
             this.tbNumStore.TabIndex = 5;
@@ -89,7 +89,7 @@ namespace MainProject
             // tbNumDept
             // 
             this.tbNumDept.Location = new System.Drawing.Point(23, 112);
-            this.tbNumDept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNumDept.Margin = new System.Windows.Forms.Padding(2);
             this.tbNumDept.Name = "tbNumDept";
             this.tbNumDept.Size = new System.Drawing.Size(76, 20);
             this.tbNumDept.TabIndex = 4;
@@ -118,25 +118,27 @@ namespace MainProject
             // 
             this.rbStore.AutoSize = true;
             this.rbStore.Location = new System.Drawing.Point(175, 37);
-            this.rbStore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbStore.Margin = new System.Windows.Forms.Padding(2);
             this.rbStore.Name = "rbStore";
             this.rbStore.Size = new System.Drawing.Size(51, 17);
             this.rbStore.TabIndex = 1;
             this.rbStore.TabStop = true;
             this.rbStore.Text = "Local";
             this.rbStore.UseVisualStyleBackColor = true;
+            this.rbStore.CheckedChanged += new System.EventHandler(this.rbStoreChecked);
             // 
             // rbDept
             // 
             this.rbDept.AutoSize = true;
             this.rbDept.Location = new System.Drawing.Point(26, 37);
-            this.rbDept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbDept.Margin = new System.Windows.Forms.Padding(2);
             this.rbDept.Name = "rbDept";
             this.rbDept.Size = new System.Drawing.Size(45, 17);
             this.rbDept.TabIndex = 0;
             this.rbDept.TabStop = true;
             this.rbDept.Text = "Piso";
             this.rbDept.UseVisualStyleBackColor = true;
+            this.rbDept.CheckedChanged += new System.EventHandler(this.rbDepartmentChecked);
             // 
             // labelAdress
             // 
@@ -151,7 +153,7 @@ namespace MainProject
             // tbAdress
             // 
             this.tbAdress.Location = new System.Drawing.Point(11, 217);
-            this.tbAdress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAdress.Margin = new System.Windows.Forms.Padding(2);
             this.tbAdress.Name = "tbAdress";
             this.tbAdress.Size = new System.Drawing.Size(285, 20);
             this.tbAdress.TabIndex = 3;
@@ -169,7 +171,7 @@ namespace MainProject
             // tbSqm
             // 
             this.tbSqm.Location = new System.Drawing.Point(9, 274);
-            this.tbSqm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSqm.Margin = new System.Windows.Forms.Padding(2);
             this.tbSqm.Name = "tbSqm";
             this.tbSqm.Size = new System.Drawing.Size(57, 20);
             this.tbSqm.TabIndex = 5;
@@ -187,7 +189,7 @@ namespace MainProject
             // tbAnt
             // 
             this.tbAnt.Location = new System.Drawing.Point(102, 274);
-            this.tbAnt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAnt.Margin = new System.Windows.Forms.Padding(2);
             this.tbAnt.Name = "tbAnt";
             this.tbAnt.Size = new System.Drawing.Size(76, 20);
             this.tbAnt.TabIndex = 7;
@@ -216,7 +218,7 @@ namespace MainProject
             // basePrice
             // 
             this.basePrice.Location = new System.Drawing.Point(217, 272);
-            this.basePrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.basePrice.Margin = new System.Windows.Forms.Padding(2);
             this.basePrice.Name = "basePrice";
             this.basePrice.Size = new System.Drawing.Size(76, 20);
             this.basePrice.TabIndex = 10;
@@ -235,7 +237,7 @@ namespace MainProject
             // buttonCalculate
             // 
             this.buttonCalculate.Location = new System.Drawing.Point(33, 307);
-            this.buttonCalculate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCalculate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCalculate.Name = "buttonCalculate";
             this.buttonCalculate.Size = new System.Drawing.Size(226, 50);
             this.buttonCalculate.TabIndex = 12;
@@ -243,11 +245,21 @@ namespace MainProject
             this.buttonCalculate.UseVisualStyleBackColor = true;
             this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
+            // labelFinalPrice
+            // 
+            this.labelFinalPrice.AutoSize = true;
+            this.labelFinalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFinalPrice.Location = new System.Drawing.Point(12, 369);
+            this.labelFinalPrice.Name = "labelFinalPrice";
+            this.labelFinalPrice.Size = new System.Drawing.Size(0, 17);
+            this.labelFinalPrice.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 401);
+            this.ClientSize = new System.Drawing.Size(305, 427);
+            this.Controls.Add(this.labelFinalPrice);
             this.Controls.Add(this.buttonCalculate);
             this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.basePrice);
@@ -261,9 +273,10 @@ namespace MainProject
             this.Controls.Add(this.labelAdress);
             this.Controls.Add(this.gbProperty);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbProperty.ResumeLayout(false);
             this.gbProperty.PerformLayout();
             this.ResumeLayout(false);
@@ -292,6 +305,7 @@ namespace MainProject
         private System.Windows.Forms.TextBox basePrice;
         private System.Windows.Forms.Label labelPrice;
         private System.Windows.Forms.Button buttonCalculate;
+        private System.Windows.Forms.Label labelFinalPrice;
     }
 }
 

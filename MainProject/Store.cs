@@ -8,26 +8,23 @@ namespace MainProject
 {
     class Store : Property
     {
-        private int nWindow;
+        
 
-        public Store(string adress, int years, float sqm, double price, int nWindow) : base(adress, years, sqm, price)
+      
+        public double CalculateValue(double price, double squarMetters, int nWindow)
         {
-
-        }
-
-        private double CalculateValue(double endPrice)
-        {
-
-            if (sqm > 50)
+            double endPrice = price;
+            
+            if (squarMetters > 50)
             {
-                endPrice = endPrice + (endPrice * 0.1);
+                endPrice = endPrice + (endPrice * 0.01);
             }
             if (nWindow <= 1)
             {
-                endPrice = endPrice - (endPrice * 0.2);
+                endPrice = endPrice - (endPrice * 0.02);
             }else if (nWindow > 4)
             {
-                endPrice = endPrice + (endPrice * 0.2);
+                endPrice = endPrice + (endPrice * 0.02);
             }
             return endPrice;
         }

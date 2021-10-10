@@ -9,18 +9,9 @@ namespace MainProject
 {
     class Department : Property
     {
-        private int nDept;
-
-
-        public Department(string adress, int years, float sqm, double price, int nDept) : base(adress, years, sqm, price)
+        public double CalculateValue(double price, int years, int nDept)
         {
-            
-        }
-
-
-        private double CalculateValue(double endPrice)
-        {
-
+            double endPrice = price;
             if (years<15)
             {
                 endPrice = endPrice + (endPrice * 0.1);
